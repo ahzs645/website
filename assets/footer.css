@@ -12,3 +12,5 @@
 .site-footer .footer-location{color:var(--ice)}
 /* Client access sits beside Contact us; on phones the location takes its own row. */
 @media(max-width:700px){.site-footer .footer-location{grid-column:1/-1}.site-footer .footer-email:last-child{justify-self:end}}
+/* The footer logo is off-screen at load, so skip the dot entrance animation: all six dots stay solid, matching the header. */
+.site-footer .brand-logo [data-brand-symbol="six-dot"] circle{animation:none;opacity:1;transform:none}
